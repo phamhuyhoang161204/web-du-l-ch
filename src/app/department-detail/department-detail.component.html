@@ -1,0 +1,73 @@
+<article *ngIf="department">
+  <div class="blgrou">
+    <div>
+      <a [routerLink]="['/departments-detail', department.id]" class="link">
+        <div class="img_diadiem">
+          <img [src]="department.image" alt="{{ department.name }}">
+        </div>
+        <div class="ten_diadiem">
+          <h4>Cẩm nang du lịch</h4>
+          <h2>{{ department.name }}</h2>
+        </div>
+      </a>
+    </div>
+    <div id="navbar-example3" class="from_diadiem">
+      <button href="#muadep" type="button" class="btn btn-light">{{ department.muadep }}</button>
+      <button href="#dichuyen" type="button" class="btn btn-light">{{ department.dichuyen }}</button>
+      <button href="#choidau" type="button" class="btn btn-light">{{ department.choidau }}</button>
+      <button href="#anuong" type="button" class="btn btn-light">{{ department.anuong }}</button>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" class="content_diadiem">
+      <div id="muadep" class="Muanaodep" *ngIf="department.muadep && department.title1 && department.images1">
+        <h2>{{ department.muadep }}</h2>
+        <p>{{ department.title1 }}</p>
+        <div class="img_ctdiadiem">
+          <img [src]="department.images1" alt="{{ department.muadep }}">
+        </div>
+      </div>
+      <div  id="dichuyen" class="Muanaodep" *ngIf="department.dichuyen && department.title2 && department.images2">
+        <h2>{{ department.dichuyen }}</h2>
+        <p>{{ department.title2 }}</p>
+        <div class="img_ctdiadiem">
+          <img [src]="department.images2" alt="{{ department.dichuyen }}">
+        </div>
+      </div>
+      <div id="choidau" class="Muanaodep" *ngIf="department.choidau && department.title3 && department.images3">
+        <h2>{{ department.choidau }}</h2>
+        <p>{{ department.title3 }}</p>
+        <div class="img_ctdiadiem">
+          <img [src]="department.images3" alt="{{ department.choidau }}">
+        </div>
+        <div class="img_ctdiadiem2">
+          <div>
+            <img [src]="department.images2" alt="{{ department.anuong }}">
+          </div>
+          <div>
+            <img [src]="department.images3" alt="{{ department.anuong }}">
+          </div>
+          <div>
+            <img [src]="department.images1" alt="{{ department.anuong }}">
+          </div>
+        </div>
+      </div>
+      <div id="anuong" class="Muanaodep" *ngIf="department.anuong && department.title4 && department.images4">
+        <h2>{{ department.anuong }}</h2>
+        <p>{{ department.title4 }}</p>
+        <div class="img_ctdiadiem">
+          <img [src]="department.images4" alt="{{ department.anuong }}">
+        </div>
+        <div class="img_ctdiadiem2">
+          <div>
+            <img [src]="department.images5" alt="{{ department.anuong }}">
+          </div>
+          <div>
+            <img [src]="department.images6" alt="{{ department.anuong }}">
+          </div>
+          <div>
+            <img [src]="department.images7" alt="{{ department.anuong }}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

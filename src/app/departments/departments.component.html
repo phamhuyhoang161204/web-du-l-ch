@@ -1,0 +1,30 @@
+<article>
+    <div class="article-1">
+        <h4>Bạn muốn đi đâu ?</h4>
+        <h6>Sắp xếp chuyến đi qua cẩm nang du lịch mới nhất</h6>
+        <form class="search" (submit)="search()">
+            <input class="search-1" type="text" placeholder="Nhập địa điểm cần tìm" [(ngModel)]="searchTerm"
+                name="searchTerm" (input)="search()">
+        </form>
+    </div>
+
+    <div class="search-results" *ngIf="filteredDepartments.length > 0 && searchTerm">
+        <li *ngFor="let department of filteredDepartments">
+            <a class="tk" [routerLink]="['/departments-detail', department.id]"(click)="onSelect(department)">{{ department.name }}</a>
+        </li>
+
+    </div>
+    <div class="article-2">
+        <h5>Các địa điểm nổi tiếng ở Việt Nam</h5>
+        <div class="sp">
+            <div class="image-with-text" *ngFor="let department of filteredDepartments" (click)="onSelect(department)">
+                <a class="link">
+                    <img class="anh" [src]="department.image" alt="{{ department.name }}">
+                    <div class="text">{{ department.name }}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</article>

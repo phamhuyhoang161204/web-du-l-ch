@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.menu {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name {
+  width: 30%;
+  height: auto;
+}
+
+.name h2 {
+  background-image: url(https://statics.vinpearl.com/du-lich-da-nang_1657939501.JPG);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Charcoal;
+}
+
+.menu-1 {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.menu-2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-2 a {
+  text-decoration: none;
+}
+
+article {
+  width: 100%;
+  height: 700px;
+  background-image: url(https://vcdn1-dulich.vnecdn.net/2022/06/21/CoTodulich-1655800482-5912-1655807499.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=hW5Jgm_nhiVondj_8agNhg);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.article-1 {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.article-1 h4 {
+  font-size: 62px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  color: rgb(244, 249, 249);
+}
+
+.article-1 h6 {
+  font-size: 16px;
+  color: rgb(243, 245, 246);
+  margin-bottom: 40px;
+}
+
+.search {
+  width: 100%;
+  height: auto;
+}
+
+.search-1 {
+  width: 65%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.article-2 {
+  width: 60%; 
+  text-align: center;
+  margin-top: 20px; 
+  display: block; 
+  clear: both; 
+}
+
+.article-2 h5 {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  color: rgb(249, 251, 250);
+}
+.sp{
+  margin-top: 20px;
+  position: relative; 
+}
+.sp .slick-slide {
+  margin: 0 5px; 
+}
+
+.slick-prev, .slick-next {
+  color: #000;
+  font-size: 24px;
+}
+
+.slick-prev {
+  left: -40px; 
+}
+
+.slick-next {
+  right: -40px; 
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+.slick-slide img:hover {
+  transform: scale(1.2);
+
+}
+.image-with-text {
+  position: relative;
+  display: inline-block; 
+}
+.text {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; 
+  padding: 5px 10px;
+  font-size: 16px; 
+}
+.article-3{
+  width: 100%;
+  height: auto;
+  background-color: #151B22;;
+  margin: auto;
+  box-shadow: 0px -20px 15px rgba(0, 0, 0, 0.5);
+}
+.article-4{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.trainghiem{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.trainghiem-1{
+  width: 90%;
+  height: 200px;
+  margin-top: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.trainghiem-1 img{
+  width: 100%;
+  height: 200px;
+  display: block;
+  border-radius: 10px; 
+}
+.trainghiem-1 h4{
+  position: absolute;
+  bottom: 10px; 
+  left: 10px; 
+  margin: 10px; 
+  color: white;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 5px; 
+}
+.tk{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.anh{
+  width: 10%;
+  height: 30px;
+}

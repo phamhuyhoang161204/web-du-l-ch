@@ -1,0 +1,130 @@
+
+.logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.logo img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.collapse{
+  margin-left: 20px;
+}
+.menu {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(33, 32, 32, 0.5);
+  display: flex;
+  justify-content: space-around;
+}
+.name {
+  width: 30%;
+  height: auto;
+}
+
+.name h2 {
+  background-image: url(https://statics.vinpearl.com/du-lich-da-nang_1657939501.JPG);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Charcoal;
+}
+.img_diadiem{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+.img_diadiem img{
+  width: 100%;
+}
+.ten_diadiem{
+  position: absolute;
+  right: 42%;
+  text-align: center;
+  top: 300px;
+}
+.ten_diadiem h2{
+  color: white;
+  font-size: 65px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.ten_diadiem h4{
+  color: white;
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.from_diadiem{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+.from_diadiem button{
+  border: 1px solid rgb(190, 190, 190);
+}
+.content_diadiem{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.gioithieu_diadiem,
+.Muanaodep{
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+.Muanaodep h2{
+  color: #0B5394;
+  text-align: center;
+}
+.Muanaodep p{
+  width: 90%;
+  margin: auto;
+}
+.img_ctdiadiem{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+.img_ctdiadiem img{
+  width: 90%;
+  max-height: 100%;
+}
+.img_ctdiadiem2{
+  padding-top: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.img_ctdiadiem2 div{
+  width: 32%;
+}
+.img_ctdiadiem2 div img{
+  width: 100%;
+}
+.tincuthe{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.tincutheimg{
+  width: 24%;
+}
+.tincutheimg img{
+  width: 100%;
+}
+.tincutheimg div{
+  font-weight: 700;
+}
